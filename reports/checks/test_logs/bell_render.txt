@@ -1,0 +1,2 @@
+PASS generated actual RTL C4/C5 bell-versus-harp dry PCM clips, velocity90; 0.8s gate/0.6s release
+tests/bell_render.v:23: $finish called at 10731400000 (1ps)

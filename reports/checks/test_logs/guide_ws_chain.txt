@@ -1,0 +1,2 @@
+PASS 30-pixel wire: all 14 notes and gaps decoded from WS2812 wire, correct key colors, green hit and frame snapshots (196 frames)
+tests/guide_ws_chain.v:38: $finish called at 231500680000 (1ps)

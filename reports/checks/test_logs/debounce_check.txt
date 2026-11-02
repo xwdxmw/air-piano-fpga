@@ -1,0 +1,2 @@
+PASS debounce parameter beyond 65535 cycles is honored
+tests/debounce_check.v:8: $finish called at 1400300000 (1ps)

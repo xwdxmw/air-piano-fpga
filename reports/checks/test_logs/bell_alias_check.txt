@@ -1,0 +1,2 @@
+PASS 36bit noninteger modal frequencies, pre-truncation 0.45Fs guards, 0.40Fs fade, bounded sum, re-trigger
+tests/bell_alias_check.v:22: $finish called at 31050000 (1ps)

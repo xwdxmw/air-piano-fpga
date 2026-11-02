@@ -1,0 +1,2 @@
+PASS5 actual decoded LCD SPI frames:0/4/32/released0/normal2,160 slot cells,32 decimal header, immutable rendering, normal Lissajous restored
+tests/lcd_poly32_check.v:48: $finish called at 141722950000 (1ps)

@@ -1,0 +1,2 @@
+PASS seven-channel operation, stale pressed key generates exactly one NOTE_OFF, quiet recovery
+tests/pressure_path_check.v:21: $finish called at 60880000 (1ps)

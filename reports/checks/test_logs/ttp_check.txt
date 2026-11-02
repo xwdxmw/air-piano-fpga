@@ -1,0 +1,2 @@
+PASS TTP boot release arm, delayed single, exclusive double/long, one-shot long and +/-2 bounds
+tests/ttp_check.v:21: $finish called at 159840000 (1ps)

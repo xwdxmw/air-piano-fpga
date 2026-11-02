@@ -1,0 +1,2 @@
+PASS missing ADC and sticky event diagnostics do not reset/mute an active audio engine; DAC clocks continue
+tests/no_lock_check.v:16: $finish called at 600120000 (1ps)

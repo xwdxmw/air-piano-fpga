@@ -1,0 +1,2 @@
+PASS all8 FSR/IR/overlap colors, hold expiration at10phases, enable clears immediately, reset clears pending feedback
+tests/live_led_follow_check.v:32: $finish called at 18100000 (1ps)

@@ -1,0 +1,2 @@
+PASS proportional pitch bend, octave-invariant ratio and low/high clamps
+tests/pitch_ratio_check.v:11: $finish called at 34000 (1ps)

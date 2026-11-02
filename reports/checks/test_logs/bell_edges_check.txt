@@ -1,0 +1,2 @@
+PASS bell cold/warm silence, onset, per-note timbre/diagnostic latch, release, low/zero velocity, natural auto-finish and retrigger
+tests/bell_edges_check.v:20: $finish called at 12983840000 (1ps)

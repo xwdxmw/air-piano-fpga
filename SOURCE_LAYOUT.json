@@ -1,0 +1,386 @@
+{
+  "baseline": "AP04",
+  "previous_git_commit": "bbec0c8d8d14b62549cfa6c58bf6374aafba8481",
+  "comparison": "All original src files preserved byte-for-byte after CRLF-to-LF normalization; paths may change.",
+  "files": [
+    {
+      "original": "src/ads1256_driver.v",
+      "current": "src/ads1256_driver.v",
+      "sha256_lf": "c8ededcac4c26ea148909e2038cf4e6cf74863d59cbf8b4e48be74d8ede193da"
+    },
+    {
+      "original": "src/bell_bank.v",
+      "current": "src/bell_bank.v",
+      "sha256_lf": "9f5810ca36ae7932318b8408eefd763ddc9749d9a7bb93111b9e01d40bc961b0"
+    },
+    {
+      "original": "src/boot_select.v",
+      "current": "src/boot_select.v",
+      "sha256_lf": "bfce1b8b982dd7b5f01c0d2bdb9ed9651afa3bf138e8894d04b7ddd756de753c"
+    },
+    {
+      "original": "src/c_interact_top.v",
+      "current": "src/c_interact_top.v",
+      "sha256_lf": "d9cb2ca3c2366980113fced928bfdea1def1d3170c3cda2002a888bbdf54cbea"
+    },
+    {
+      "original": "src/c_sync_debounce.v",
+      "current": "src/c_sync_debounce.v",
+      "sha256_lf": "37d669931a3d624d6ef95fafc62dba20d3ab380dc3cee3881986e96bd481ac3a"
+    },
+    {
+      "original": "src/c_to_voice_adapter.v",
+      "current": "src/c_to_voice_adapter.v",
+      "sha256_lf": "a7aaff776a31ccb27ed86630e7e9e51ebdb375c46e374fc2a2fcfd9c895a8ad4"
+    },
+    {
+      "original": "src/cap_touch.v",
+      "current": "src/cap_touch.v",
+      "sha256_lf": "3164448dba5f8e8e15dd69011def7b137453b0aead004e81ce84fc3095020441"
+    },
+    {
+      "original": "src/clk.sdc",
+      "current": "src/clk.sdc",
+      "sha256_lf": "efc61e63aa6c856f9c14378f3374011a8cb34ff765af64b990b0f52cd81cade0"
+    },
+    {
+      "original": "src/clk_div.v",
+      "current": "legacy/rtl/clk_div.v",
+      "sha256_lf": "9953e8a515455124e26b42819fa7548f1b871d4b5acafff3008c6e7ac7db6e7a"
+    },
+    {
+      "original": "src/codec_init.v",
+      "current": "src/codec_init.v",
+      "sha256_lf": "d14620c2aed5aea7a7cb5f5fa2e3855ddacb6ccbd717c6f31ca74a60adfec66d"
+    },
+    {
+      "original": "src/delay_fx.v",
+      "current": "src/delay_fx.v",
+      "sha256_lf": "098af98dfaf594e5220a20190147a301461b3311b071f25364c6e6b6151cc2ee"
+    },
+    {
+      "original": "src/demo_seq.v",
+      "current": "src/demo_seq.v",
+      "sha256_lf": "96e68c755d0887b47d486ef18fb4b92023e1718180fe89bfefee3a0567e2b60d"
+    },
+    {
+      "original": "src/event_fifo.v",
+      "current": "src/event_fifo.v",
+      "sha256_lf": "998917ac713efcf469f866d57f6c9d9ac6f9d4e094faa5aa8beb1eeec7a06240"
+    },
+    {
+      "original": "src/event_queue_multi.v",
+      "current": "src/event_queue_multi.v",
+      "sha256_lf": "bd9bb9e60df3462859e4866d730b0b0d5108a163b9d1bb2d2d8449d953326ad8"
+    },
+    {
+      "original": "src/flute_bank.v",
+      "current": "src/flute_bank.v",
+      "sha256_lf": "58986710f1e342e41845c171f8675d09a2b4349103cef3c0f65afaeb0e833d6e"
+    },
+    {
+      "original": "src/force_map.v",
+      "current": "src/force_map.v",
+      "sha256_lf": "d6a2631815ea2ee54dda3e0c717afdaa759526f0c87a3e6ce79ead9a924a4202"
+    },
+    {
+      "original": "src/gowin_pll/gowin_pll.v",
+      "current": "src/gowin_pll/gowin_pll.v",
+      "sha256_lf": "66eddf2824ee08fbb2f5ba76007e2547fb65b234f96d8aa7df7e6437223d4ff9"
+    },
+    {
+      "original": "src/gowin_pll/gowin_pll_mod.v",
+      "current": "src/gowin_pll/gowin_pll_mod.v",
+      "sha256_lf": "d4cc8e026c0fdcaef6a946bed3114496e60dd94163cef9297f611c675756d73c"
+    },
+    {
+      "original": "src/guide_led_map.v",
+      "current": "src/guide_led_map.v",
+      "sha256_lf": "65e243458887a2bacb804cbc47b41cda3d886d495b87a7cbe15c1f2de7c3954c"
+    },
+    {
+      "original": "src/guide_seq.v",
+      "current": "src/guide_seq.v",
+      "sha256_lf": "7eaed97c88fdf0127f7cf856d1e2c4ba070742768d33bed32b460f36d775ac90"
+    },
+    {
+      "original": "src/i2s_tx.v",
+      "current": "legacy/rtl/i2s_tx.v",
+      "sha256_lf": "4e46a0aaf8cdb154fc0613e568663df63b2f0225430e7e554cb9b2f723101db0"
+    },
+    {
+      "original": "src/lcd_panel.v",
+      "current": "src/lcd_panel.v",
+      "sha256_lf": "f12d193cea18ba783024455ebe6922e556791ec5bc6ca4b109007137b4a5963a"
+    },
+    {
+      "original": "src/led_startup_test.v",
+      "current": "src/led_startup_test.v",
+      "sha256_lf": "b216dbf50d7201f65cee5df17aa833fe9a6b17334ae069d7bc4945337d94f6a0"
+    },
+    {
+      "original": "src/live_led_follow.v",
+      "current": "src/live_led_follow.v",
+      "sha256_lf": "3e61ad6a1d74fc108c96acb9d671367dd2d4344da549b71bae2c869b2b3e68d5"
+    },
+    {
+      "original": "src/mixer.v",
+      "current": "src/mixer.v",
+      "sha256_lf": "9956d88c340d3ab49e582b572d3f146f1e0e6701904022bb776472d130ae9591"
+    },
+    {
+      "original": "src/mixer_ref.v",
+      "current": "legacy/rtl/mixer_ref.v",
+      "sha256_lf": "e4c7cd1cd6a8ab143be6cbeb95192c87c00ace6fda8cd01ca782d373d16f69a5"
+    },
+    {
+      "original": "src/note_freq_rom.v",
+      "current": "src/note_freq_rom.v",
+      "sha256_lf": "39d4f8b8916a91c037c095d2f613de7de3265358c41eaa63a41557ddff4fcc57"
+    },
+    {
+      "original": "src/note_transpose.v",
+      "current": "src/note_transpose.v",
+      "sha256_lf": "93e741d061c5abf18ad153d051a454006438cfe54b3d6e21214af8e109bf4cf1"
+    },
+    {
+      "original": "src/optical_calib.v",
+      "current": "src/optical_calib.v",
+      "sha256_lf": "359a25ac4315b5c61d3a1a82073aea6bbeea8e0d8df3972fa29d499bd2b5f2f0"
+    },
+    {
+      "original": "src/optical_harp.v",
+      "current": "src/optical_harp.v",
+      "sha256_lf": "bd9db62091fc72063024f27880a4498c2035a06f0b3bc501ed51e99b914c1351"
+    },
+    {
+      "original": "src/optical_quantize.v",
+      "current": "src/optical_quantize.v",
+      "sha256_lf": "8feff09996f8b5dd7ba7c256ad86e875a26c49641a440e5a8b51d9132811c7b9"
+    },
+    {
+      "original": "src/osc_synth.v",
+      "current": "src/osc_synth.v",
+      "sha256_lf": "35c5c7b380808065ebb400f514bcf696fb4acbbe289db95eabc2358bcfb074d6"
+    },
+    {
+      "original": "src/performance_controls.v",
+      "current": "src/performance_controls.v",
+      "sha256_lf": "b57196da07e2a5084e9a49d2284e4ae02d7abb9a04d259fcc59e92fef751c402"
+    },
+    {
+      "original": "src/pin_airpiano_138k.cst",
+      "current": "src/pin_airpiano_138k.cst",
+      "sha256_lf": "57550556c509f8edf1cc0c04d7bd45335a833e97494a8b548b8991282ba1d612"
+    },
+    {
+      "original": "src/pll_12m288.v",
+      "current": "src/pll_12m288.v",
+      "sha256_lf": "75cac44716cdccf07ed915694a0faadd65d87d30e6a9f42758e7012eb7b22bea"
+    },
+    {
+      "original": "src/pll_init.v",
+      "current": "src/pll_init.v",
+      "sha256_lf": "3ef05a1ba92157d73e3c54ed9d589645508a4ae332d8bcf133a0457cc3e866c8"
+    },
+    {
+      "original": "src/poly32_seq.v",
+      "current": "src/poly32_seq.v",
+      "sha256_lf": "efa0c7c5d0b811595bba58ce2772580432f9301c4be741789cc81d7cb2acce42"
+    },
+    {
+      "original": "src/poly_mgr.v",
+      "current": "src/poly_mgr.v",
+      "sha256_lf": "d3306a256e0fb269ef18c2de13df342ce9756fa776552f7a4959039d42d61300"
+    },
+    {
+      "original": "src/pressure_calib.v",
+      "current": "src/pressure_calib.v",
+      "sha256_lf": "4247129c073e6caa550aa4765f525f23bfd6490341b8b97f8e709f24927398f3"
+    },
+    {
+      "original": "src/pressure_detect.v",
+      "current": "src/pressure_detect.v",
+      "sha256_lf": "323d488a621a9880641e70c219c3cf7e30a4b646434f0ffc2155067e0d0776fb"
+    },
+    {
+      "original": "src/pressure_key.v",
+      "current": "src/pressure_key.v",
+      "sha256_lf": "81aa11e49c366884d3ece866860015bba64f73b1b4f14f070e09ca937f3c1fed"
+    },
+    {
+      "original": "src/pressure_zero.v",
+      "current": "src/pressure_zero.v",
+      "sha256_lf": "ccebcfa1e0d4c77da9eaf5dfcecc8af99130537e2e3b483065288c1e7188afe1"
+    },
+    {
+      "original": "src/pt8211_tx.v",
+      "current": "src/pt8211_tx.v",
+      "sha256_lf": "5eb5c04db4cfc3ae632bbf8d235333dac814174d39350d8e81adad7fb6298793"
+    },
+    {
+      "original": "src/scope_cap.v",
+      "current": "src/scope_cap.v",
+      "sha256_lf": "d4df887c263d96357d062bb9e19814e44d0a879b42f0efd1d0786b4822b73d84"
+    },
+    {
+      "original": "src/sine_rom.v",
+      "current": "src/sine_rom.v",
+      "sha256_lf": "dd7e0f0e8930fc53b6cb3c041a5eb60fc597fe5ec9e7eb5a8454c24c108bbb3c"
+    },
+    {
+      "original": "src/spectrum16.v",
+      "current": "src/spectrum16.v",
+      "sha256_lf": "becbce96f55eb7963f886b20dbe2993f69fe4a13c1e07f26e6007f9c7f56c304"
+    },
+    {
+      "original": "src/standard_i2s_tx.v",
+      "current": "src/standard_i2s_tx.v",
+      "sha256_lf": "6e81a279ec0df01602479569a3dab8927380acf57061b56d0313332430d887b3"
+    },
+    {
+      "original": "src/tb_ads1256.v",
+      "current": "tests/legacy/tb_ads1256.v",
+      "sha256_lf": "324e7459d04e699aaf597799e582fc3e38ce61baa45be2022d807aad4db84406"
+    },
+    {
+      "original": "src/tb_autozero.v",
+      "current": "tests/legacy/tb_autozero.v",
+      "sha256_lf": "286945088a132979ebf91c0c12be1be5c56bbcc1b8591b72e3c5badfe11905d9"
+    },
+    {
+      "original": "src/tb_cap_touch.v",
+      "current": "tests/legacy/tb_cap_touch.v",
+      "sha256_lf": "351b539fd902eed02fe5ddb9e5b0c6b16c34214075a65a0c6713cf07b63e4c1e"
+    },
+    {
+      "original": "src/tb_collide.v",
+      "current": "tests/legacy/tb_collide.v",
+      "sha256_lf": "15fa5ebc62273b49cd5a5d5cb79d938c950ea669e7cdc16e13b7b0651ef44b5e"
+    },
+    {
+      "original": "src/tb_collide2.v",
+      "current": "tests/legacy/tb_collide2.v",
+      "sha256_lf": "9390520e10e4c78af2ecc7986e05bc5a1a1ab8a7f3c514675271cfe267b7b4e3"
+    },
+    {
+      "original": "src/tb_demo_seq.v",
+      "current": "tests/legacy/tb_demo_seq.v",
+      "sha256_lf": "13a446f770f833bdc910e93861f86d80f19778c12e94c3912f612423e78b0ece"
+    },
+    {
+      "original": "src/tb_eight_keys.v",
+      "current": "tests/legacy/tb_eight_keys.v",
+      "sha256_lf": "2d79b35d2ff6e2c18a28ffdaa781d22f4fa28afeef0839be5618ce2db4e41aec"
+    },
+    {
+      "original": "src/tb_event_fifo.v",
+      "current": "tests/legacy/tb_event_fifo.v",
+      "sha256_lf": "5f8a373d3a8c9cfdceeb3ad24784090fc388da11cffec649d98030f350509be8"
+    },
+    {
+      "original": "src/tb_harp.v",
+      "current": "tests/legacy/tb_harp.v",
+      "sha256_lf": "31169b42df0e65bc4eed719368e56356b6c24c9421b3d760601d33f850be40f2"
+    },
+    {
+      "original": "src/tb_key_mask.v",
+      "current": "tests/legacy/tb_key_mask.v",
+      "sha256_lf": "6091bd5d082187d2abfbc2c0d6be6ebf63d0536f3843c55627a6c4161f803967"
+    },
+    {
+      "original": "src/tb_lfo.v",
+      "current": "tests/legacy/tb_lfo.v",
+      "sha256_lf": "64eee5ba0579d8f21aca6e51040b5ebce68a45a121595c38f90fa26d5f740b25"
+    },
+    {
+      "original": "src/tb_mode_switch.v",
+      "current": "tests/legacy/tb_mode_switch.v",
+      "sha256_lf": "1c293a29b3ec0758d5d24b1cf42506ac4442867c2fee6a89e9f33ace4e0e223c"
+    },
+    {
+      "original": "src/tb_optical_harp.v",
+      "current": "tests/legacy/tb_optical_harp.v",
+      "sha256_lf": "b51669dfe00d2b1ed3e80fd87a6cc9f753d2a7d210d931dc16f0a5ee29a53d4c"
+    },
+    {
+      "original": "src/tb_poly_mgr.v",
+      "current": "tests/legacy/tb_poly_mgr.v",
+      "sha256_lf": "035af42f59abfe1f76ab22ec2b90f17812350a61f06903a1044ccc69b84c1ad1"
+    },
+    {
+      "original": "src/tb_pressure_key.v",
+      "current": "tests/legacy/tb_pressure_key.v",
+      "sha256_lf": "622c73d1f77223c41fe770b075a96b1d957c507f0f798c3e0986caed47a49b94"
+    },
+    {
+      "original": "src/tb_pt8211_tx.v",
+      "current": "tests/legacy/tb_pt8211_tx.v",
+      "sha256_lf": "bf7abbfc14a52c3b4cd5145bb769a3ed8d6ca7afb062617bc7bd792a4417f4a4"
+    },
+    {
+      "original": "src/tb_push.v",
+      "current": "tests/legacy/tb_push.v",
+      "sha256_lf": "6dfe5e4511414034148752392a27c5c302327be518ea8b8a1de1b6757ca56f8e"
+    },
+    {
+      "original": "src/tb_push2.v",
+      "current": "tests/legacy/tb_push2.v",
+      "sha256_lf": "5649d0b3455ec020ef0c9451f4c443a3dc8e513aa7723da177971dfc738f54b4"
+    },
+    {
+      "original": "src/tb_touch.v",
+      "current": "tests/legacy/tb_touch.v",
+      "sha256_lf": "1c51cfb652d2239074ff1ad8acded853c62fdd556f733881cdf8849cb5c931c9"
+    },
+    {
+      "original": "src/tb_voice_check.v",
+      "current": "tests/legacy/tb_voice_check.v",
+      "sha256_lf": "0cf5cbd31bf4e0acf44bb2266477b6ec4a05f2eefc76d5a5850364a2106e4ff1"
+    },
+    {
+      "original": "src/top_board.v",
+      "current": "src/top_board.v",
+      "sha256_lf": "3dabaa5c519891595cd0c2a4b8d0ce0257c3add40847f66c9b168f85bd598f06"
+    },
+    {
+      "original": "src/top_synth.v",
+      "current": "src/top_synth.v",
+      "sha256_lf": "833577a59a3cac64f9cc18e7afeef7ef546be46e51035fea805506794e893489"
+    },
+    {
+      "original": "src/top_system.v",
+      "current": "src/top_system.v",
+      "sha256_lf": "d649887b38d8001cab672b25484ee8b06afcfdd74730ce97adc5c1f80d58cdca"
+    },
+    {
+      "original": "src/ttp_gestures.v",
+      "current": "src/ttp_gestures.v",
+      "sha256_lf": "ca021fafdb5d2bfdf72216963423fe88089c2ca9216f4209a38a9ed365776fa5"
+    },
+    {
+      "original": "src/voice_array.v",
+      "current": "src/voice_array.v",
+      "sha256_lf": "0937af3f862594043bde5c53d9ee421690e2e509eeef863406f4c161490926bb"
+    },
+    {
+      "original": "src/voice_status_snapshot.v",
+      "current": "src/voice_status_snapshot.v",
+      "sha256_lf": "b945979aa23dfdbcb35ef350262baa87959d7482c2ddd0129b7fdc5f65db0365"
+    },
+    {
+      "original": "src/voice_synth.v",
+      "current": "src/voice_synth.v",
+      "sha256_lf": "760ed55c3a28b5802723349245b631cfbe866c86dacaca0543269416dea7055e"
+    },
+    {
+      "original": "src/ws2812_tx.v",
+      "current": "src/ws2812_tx.v",
+      "sha256_lf": "f383cd4cc28d2e95b2817c267a00f69588c8828f4bd2038b504967faa5f47ff0"
+    }
+  ],
+  "removed_unused_project_entries": [
+    "src/clk_div.v",
+    "src/i2s_tx.v"
+  ]
+}

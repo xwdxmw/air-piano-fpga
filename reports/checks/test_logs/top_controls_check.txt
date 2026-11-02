@@ -1,0 +1,2 @@
+PASS actual top keyboard timbre selector, per-note latch, owner preservation and independent Gray-coded bend CDC
+tests/top_controls_check.v:19: $finish called at 470320000 (1ps)

@@ -1,0 +1,2 @@
+PASS scope rising-zero-cross phase lock and silent trigger timeout
+tests/scope_trigger.v:16: $finish called at 27460000 (1ps)

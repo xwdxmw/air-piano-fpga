@@ -1,0 +1,4 @@
+ADC_AB fast=1 scan_ns=2170420 ready_to_store_ns=30120; DIN hold>=50ns, CS hold>=8CLKIN, SYNC gap>=24CLKIN, RDATA t6>=50CLKIN
+ADC_AB fast=0 scan_ns=2562420 ready_to_store_ns=56120; DIN hold>=50ns, CS hold>=8CLKIN, SYNC gap>=24CLKIN, RDATA t6>=50CLKIN
+PASS same 210us-ready pin model, 24 ordered samples per schedule; scan savings=392000 ns, publication savings=26000 ns; not board latency
+tests/adc_timing_ab_check.v:87: $finish called at 11871450000 (1ps)

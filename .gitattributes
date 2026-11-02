@@ -1,0 +1,2 @@
+# Preserve original tool reports and release evidence byte-for-byte.
+/reports/reference/* -text

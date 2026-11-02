@@ -1,0 +1,5 @@
+HARP 60
+HARP 62
+HARP 64
+PASS: all 3 string rises survive simultaneous pending pop/push
+tests/harp_pending_check.v:12: $finish called at 520000 (1ps)

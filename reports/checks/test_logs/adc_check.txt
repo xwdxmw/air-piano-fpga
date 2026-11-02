@@ -1,0 +1,3 @@
+PASS explicit calibration wait, ACAL off, 24 ordered samples, DIN hold >=50ns
+PASS DRDY stuck high/low produces no fresh samples or RDATA
+tests/adc_check.v:66: $finish called at 30958510000 (1ps)

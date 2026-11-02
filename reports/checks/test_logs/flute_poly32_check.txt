@@ -1,0 +1,2 @@
+PASS 32 sustained flute voices, source0 zero-velocity release, ALL_OFF and32-slot bell reuse clear flute flags
+tests/flute_poly32_check.v:20: $finish called at 1629400000 (1ps)

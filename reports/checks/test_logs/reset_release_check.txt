@@ -1,0 +1,2 @@
+PASS actual top_board20 varied-phase PLL loss/relock cycles: asynchronous assert,two-audio-edge release, idle PCM zero; external reset same; metastability not modeled
+tests/reset_release_check.v:22: $finish called at 496049590 (1ps)

@@ -1,0 +1,2 @@
+PASS 8-lane queue: ordered scoreboard, simultaneous full pop/push, overflow and wraparound
+tests/queue_scoreboard.v:32: $finish called at 15141000 (1ps)

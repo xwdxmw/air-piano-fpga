@@ -1,0 +1,2 @@
+PASS cold/warm silence, dry impulse, delay length and 0.5 feedback
+tests/delay_clean.v:22: $finish called at 9880000 (1ps)

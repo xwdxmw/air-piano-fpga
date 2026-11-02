@@ -1,0 +1,9 @@
+PASS phase1 actual30pixel WS wire FSR00 IR00
+PASS phase2 actual30pixel WS wire FSRa5 IR00
+PASS phase3 actual30pixel WS wire FSR00 IR00
+PASS phase4 actual30pixel WS wire FSR00 IR3c
+PASS phase5 actual30pixel WS wire FSR00 IR00
+PASS phase6 actual30pixel WS wire FSR81 IR99
+PASS phase7 actual30pixel WS wire FSR00 IRff
+PASS normal following: ADC->FSR, raw IR->debounce, overlap, releases, T mute, 30pixel serialization (49 frames)
+tests/normal_led_wire.v:66: $finish called at 58500100000 (1ps)

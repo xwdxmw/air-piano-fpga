@@ -1,0 +1,2 @@
+PASS zero-velocity NOTE_ON cannot leak silent slots and releases existing matching note
+tests/zero_velocity_check.v:10: $finish called at 730680000 (1ps)

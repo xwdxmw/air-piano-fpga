@@ -1,0 +1,1083 @@
+{
+  "version": "AP04",
+  "date": "2026-10-31",
+  "baseline": "AP03",
+  "board_tested": false,
+  "burnable": true,
+  "test_count": 60,
+  "reset_cases": 20,
+  "build": {
+    "state": "finished",
+    "flow": "run_gowin.tcl",
+    "started": "2026-10-31T19:57:21.2702322+08:00",
+    "finished": "2026-10-31T21:22:43.6351391+08:00",
+    "exit_code": -1
+  },
+  "native_process_exit_clean": false,
+  "completed_output_exit_hang_recovered": true,
+  "artifact_verification_passed": true,
+  "timing": {
+    "setup": 0,
+    "hold": 0
+  },
+  "timing_models": {
+    "Setup": "Slow 0.873V 0C C1/I0",
+    "Hold": "Fast 0.927V 85C C1/I0"
+  },
+  "fmax": [
+    {
+      "clock": "clk_50m",
+      "required_mhz": 50.0,
+      "fmax_mhz": 62.154
+    },
+    {
+      "clock": "u_board/u_pll/u_pll_0/u_pll_0/PLL_inst/CLKOUT0.default_gen_clk",
+      "required_mhz": 12.264,
+      "fmax_mhz": 14.064
+    }
+  ],
+  "resources": {
+    "Logic": {
+      "used": 116600.0,
+      "available": 138240.0
+    },
+    "Register": {
+      "used": 24455.0,
+      "available": 139140.0
+    },
+    "BSRAM": {
+      "used": 212.0,
+      "available": 340.0
+    },
+    "DSP": {
+      "used": 226.5,
+      "available": 298.0
+    }
+  },
+  "warnings": [
+    {
+      "code": "EX3791",
+      "message": "Expression size 24 truncated to fit in target size 23(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\ads1256_driver.v\":324)"
+    },
+    {
+      "code": "EX3791",
+      "message": "Expression size 24 truncated to fit in target size 23(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\ads1256_driver.v\":330)"
+    },
+    {
+      "code": "EX3791",
+      "message": "Expression size 24 truncated to fit in target size 23(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\ads1256_driver.v\":349)"
+    },
+    {
+      "code": "EX3791",
+      "message": "Expression size 24 truncated to fit in target size 23(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\ads1256_driver.v\":387)"
+    },
+    {
+      "code": "EX3791",
+      "message": "Expression size 24 truncated to fit in target size 23(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\ads1256_driver.v\":450)"
+    },
+    {
+      "code": "EX3791",
+      "message": "Expression size 24 truncated to fit in target size 23(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\ads1256_driver.v\":498)"
+    },
+    {
+      "code": "EX3791",
+      "message": "Expression size 24 truncated to fit in target size 23(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\ads1256_driver.v\":513)"
+    },
+    {
+      "code": "EX3791",
+      "message": "Expression size 24 truncated to fit in target size 23(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\ads1256_driver.v\":594)"
+    },
+    {
+      "code": "EX3791",
+      "message": "Expression size 32 truncated to fit in target size 12(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\pressure_zero.v\":36)"
+    },
+    {
+      "code": "EX3791",
+      "message": "Expression size 32 truncated to fit in target size 12(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\force_map.v\":26)"
+    },
+    {
+      "code": "EX3791",
+      "message": "Expression size 32 truncated to fit in target size 12(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\force_map.v\":27)"
+    },
+    {
+      "code": "EX3791",
+      "message": "Expression size 19 truncated to fit in target size 18(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\pressure_key.v\":126)"
+    },
+    {
+      "code": "EX3791",
+      "message": "Expression size 17 truncated to fit in target size 16(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\pressure_key.v\":168)"
+    },
+    {
+      "code": "EX3791",
+      "message": "Expression size 32 truncated to fit in target size 7(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\event_queue_multi.v\":28)"
+    },
+    {
+      "code": "EX3791",
+      "message": "Expression size 7 truncated to fit in target size 6(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\event_queue_multi.v\":36)"
+    },
+    {
+      "code": "EX3791",
+      "message": "Expression size 5 truncated to fit in target size 4(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\pll_init.v\":179)"
+    },
+    {
+      "code": "EX3791",
+      "message": "Expression size 18 truncated to fit in target size 17(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\pll_init.v\":207)"
+    },
+    {
+      "code": "EX3791",
+      "message": "Expression size 24 truncated to fit in target size 18(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":32)"
+    },
+    {
+      "code": "EX3791",
+      "message": "Expression size 24 truncated to fit in target size 18(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":32)"
+    },
+    {
+      "code": "EX3791",
+      "message": "Expression size 24 truncated to fit in target size 18(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":32)"
+    },
+    {
+      "code": "EX3791",
+      "message": "Expression size 24 truncated to fit in target size 18(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":32)"
+    },
+    {
+      "code": "EX3791",
+      "message": "Expression size 24 truncated to fit in target size 22(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\mixer.v\":59)"
+    },
+    {
+      "code": "EX3791",
+      "message": "Expression size 3 truncated to fit in target size 2(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\lcd_panel.v\":59)"
+    },
+    {
+      "code": "EX3791",
+      "message": "Expression size 32 truncated to fit in target size 6(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\scope_cap.v\":19)"
+    },
+    {
+      "code": "EX3791",
+      "message": "Expression size 32 truncated to fit in target size 5(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\spectrum16.v\":18)"
+    },
+    {
+      "code": "EX3791",
+      "message": "Expression size 32 truncated to fit in target size 6(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\lcd_panel.v\":178)"
+    },
+    {
+      "code": "EX3791",
+      "message": "Expression size 32 truncated to fit in target size 6(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\lcd_panel.v\":178)"
+    },
+    {
+      "code": "EX3791",
+      "message": "Expression size 8 truncated to fit in target size 4(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\lcd_panel.v\":190)"
+    },
+    {
+      "code": "EX3791",
+      "message": "Expression size 32 truncated to fit in target size 6(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\lcd_panel.v\":201)"
+    },
+    {
+      "code": "EX3791",
+      "message": "Expression size 32 truncated to fit in target size 6(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\lcd_panel.v\":202)"
+    },
+    {
+      "code": "EX3791",
+      "message": "Expression size 32 truncated to fit in target size 6(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\lcd_panel.v\":203)"
+    },
+    {
+      "code": "EX3791",
+      "message": "Expression size 8 truncated to fit in target size 6(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\lcd_panel.v\":205)"
+    },
+    {
+      "code": "EX3791",
+      "message": "Expression size 32 truncated to fit in target size 6(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\lcd_panel.v\":206)"
+    },
+    {
+      "code": "EX3791",
+      "message": "Expression size 32 truncated to fit in target size 6(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\lcd_panel.v\":207)"
+    },
+    {
+      "code": "EX3791",
+      "message": "Expression size 8 truncated to fit in target size 6(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\lcd_panel.v\":212)"
+    },
+    {
+      "code": "EX3791",
+      "message": "Expression size 9 truncated to fit in target size 8(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\lcd_panel.v\":223)"
+    },
+    {
+      "code": "EX3791",
+      "message": "Expression size 9 truncated to fit in target size 8(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\lcd_panel.v\":223)"
+    },
+    {
+      "code": "EX3791",
+      "message": "Expression size 9 truncated to fit in target size 8(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\lcd_panel.v\":224)"
+    },
+    {
+      "code": "EX3791",
+      "message": "Expression size 9 truncated to fit in target size 8(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\lcd_panel.v\":224)"
+    },
+    {
+      "code": "EX0211",
+      "message": "The output port \"calib_done_o\" of module \"c_interact_top(KEY_MASK=8'b11111111)\" has no driver, assigning undriven bits to Z, simulation mismatch possible(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\c_interact_top.v\":69)"
+    },
+    {
+      "code": "CV0016",
+      "message": "Input calib_run_p is unused(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\top_system.v\":28)"
+    },
+    {
+      "code": "CV0016",
+      "message": "Input calib_run_o is unused(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\top_system.v\":29)"
+    },
+    {
+      "code": "CV0016",
+      "message": "Input calib_clear is unused(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\top_system.v\":30)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"note_freq_rom\" instantiated to \"u_nf\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\voice_synth.v\":56)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine_rom\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\osc_synth.v\":36)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"note_freq_rom\" instantiated to \"u_nf\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\voice_synth.v\":56)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine_rom\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\osc_synth.v\":36)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"note_freq_rom\" instantiated to \"u_nf\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\voice_synth.v\":56)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine_rom\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\osc_synth.v\":36)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"note_freq_rom\" instantiated to \"u_nf\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\voice_synth.v\":56)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine_rom\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\osc_synth.v\":36)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"note_freq_rom\" instantiated to \"u_nf\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\voice_synth.v\":56)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine_rom\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\osc_synth.v\":36)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"note_freq_rom\" instantiated to \"u_nf\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\voice_synth.v\":56)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine_rom\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\osc_synth.v\":36)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"note_freq_rom\" instantiated to \"u_nf\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\voice_synth.v\":56)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine_rom\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\osc_synth.v\":36)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"note_freq_rom\" instantiated to \"u_nf\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\voice_synth.v\":56)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine_rom\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\osc_synth.v\":36)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"note_freq_rom\" instantiated to \"u_nf\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\voice_synth.v\":56)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine_rom\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\osc_synth.v\":36)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"note_freq_rom\" instantiated to \"u_nf\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\voice_synth.v\":56)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine_rom\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\osc_synth.v\":36)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"note_freq_rom\" instantiated to \"u_nf\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\voice_synth.v\":56)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine_rom\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\osc_synth.v\":36)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"note_freq_rom\" instantiated to \"u_nf\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\voice_synth.v\":56)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine_rom\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\osc_synth.v\":36)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"note_freq_rom\" instantiated to \"u_nf\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\voice_synth.v\":56)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine_rom\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\osc_synth.v\":36)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"note_freq_rom\" instantiated to \"u_nf\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\voice_synth.v\":56)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine_rom\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\osc_synth.v\":36)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"note_freq_rom\" instantiated to \"u_nf\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\voice_synth.v\":56)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine_rom\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\osc_synth.v\":36)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"note_freq_rom\" instantiated to \"u_nf\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\voice_synth.v\":56)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine_rom\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\osc_synth.v\":36)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"note_freq_rom\" instantiated to \"u_nf\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\voice_synth.v\":56)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine_rom\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\osc_synth.v\":36)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"note_freq_rom\" instantiated to \"u_nf\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\voice_synth.v\":56)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine_rom\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\osc_synth.v\":36)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"note_freq_rom\" instantiated to \"u_nf\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\voice_synth.v\":56)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine_rom\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\osc_synth.v\":36)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"note_freq_rom\" instantiated to \"u_nf\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\voice_synth.v\":56)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine_rom\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\osc_synth.v\":36)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"note_freq_rom\" instantiated to \"u_nf\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\voice_synth.v\":56)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine_rom\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\osc_synth.v\":36)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"note_freq_rom\" instantiated to \"u_nf\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\voice_synth.v\":56)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine_rom\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\osc_synth.v\":36)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"note_freq_rom\" instantiated to \"u_nf\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\voice_synth.v\":56)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine_rom\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\osc_synth.v\":36)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"note_freq_rom\" instantiated to \"u_nf\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\voice_synth.v\":56)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine_rom\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\osc_synth.v\":36)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"note_freq_rom\" instantiated to \"u_nf\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\voice_synth.v\":56)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine_rom\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\osc_synth.v\":36)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"note_freq_rom\" instantiated to \"u_nf\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\voice_synth.v\":56)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine_rom\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\osc_synth.v\":36)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"note_freq_rom\" instantiated to \"u_nf\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\voice_synth.v\":56)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine_rom\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\osc_synth.v\":36)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"note_freq_rom\" instantiated to \"u_nf\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\voice_synth.v\":56)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine_rom\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\osc_synth.v\":36)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"note_freq_rom\" instantiated to \"u_nf\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\voice_synth.v\":56)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine_rom\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\osc_synth.v\":36)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"note_freq_rom\" instantiated to \"u_nf\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\voice_synth.v\":56)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine_rom\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\osc_synth.v\":36)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"note_freq_rom\" instantiated to \"u_nf\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\voice_synth.v\":56)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine_rom\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\osc_synth.v\":36)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\bell_bank.v\":20)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"note_freq_rom\" instantiated to \"u_nf\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\voice_synth.v\":56)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"sine_rom\" instantiated to \"u_sine_rom\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\osc_synth.v\":36)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"note_freq_rom\" instantiated to \"u_shared_note_rom\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\top_synth.v\":35)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"cap_touch\" instantiated to \"u_cap\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\c_interact_top.v\":202)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"c_sync_debounce\" instantiated to \"u_db_touch\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\c_interact_top.v\":82)"
+    },
+    {
+      "code": "NL0002",
+      "message": "The module \"guide_led_map\" instantiated to \"u_led_map\" is swept in optimizing(\"C:\\Users\\ROG\\Desktop\\qs\\air_piano_AP04_20261031\\src\\top_system.v\":190)"
+    },
+    {
+      "code": "PR1014",
+      "message": "Generic routing resource will be used to clock signal 'clk_50m_d' by the specified constraint. And then it may lead to the excessive delay or skew"
+    }
+  ],
+  "worst_setup_slack_ns": 3.911,
+  "baseline_worst_setup_slack_ns": 0.215,
+  "baseline_resources": {
+    "Logic": {
+      "used": 114612.0,
+      "available": 138240.0
+    },
+    "Register": {
+      "used": 23375.0,
+      "available": 139140.0
+    },
+    "BSRAM": {
+      "used": 272.0,
+      "available": 340.0
+    },
+    "DSP": {
+      "used": 227.0,
+      "available": 298.0
+    }
+  },
+  "baseline_fmax": [
+    {
+      "clock": "clk_50m",
+      "required_mhz": 50.0,
+      "fmax_mhz": 50.543
+    },
+    {
+      "clock": "u_board/u_pll/u_pll_0/u_pll_0/PLL_inst/CLKOUT0.default_gen_clk",
+      "required_mhz": 12.264,
+      "fmax_mhz": 15.655
+    }
+  ],
+  "pins_clocks_constraints_unchanged": true,
+  "rejected_builds": [
+    {
+      "report": "reports/attempt01/air_piano_tr_content.html",
+      "setup_violations": 1,
+      "hold_violations": 0,
+      "shipped": false,
+      "fix": "WS word shift datapath removes variable bit-select feedback; additional LCD row cache"
+    }
+  ],
+  "bitstream": {
+    "path": "fs/air_piano_AP04_20261031.fs",
+    "bytes": 42340877,
+    "sha256": "893EB898045665B969FAB0B20D3F1AD60CD6D66A46C74B495BAB40C88D76709B"
+  },
+  "rollback": [
+    {
+      "path": "baseline/air_piano_AP03_20261031.fs",
+      "sha256": "F82313F2E2535DE10FE74239BA7CEE9D558FFCE38A80D4885D68756DDD0ABCFC"
+    },
+    {
+      "path": "baseline/air_piano_r5q_20261030.fs",
+      "sha256": "25CB6C54AC4CDD20634EB9E84A66B0CEC8EF287BC2971142A68CE0FC4AF4F331"
+    }
+  ],
+  "gao_debug_bitstream_included": false,
+  "known_unclosed": [
+    "Not board tested; Flash cold startup and long-running stability unverified",
+    "PR1014 retained if reported",
+    "No additional AIN-to-jack latency claim; <=5ms and determinism remain unverified",
+    "AP03 FSR physical non-following root cause not confirmed by board test"
+  ]
+}

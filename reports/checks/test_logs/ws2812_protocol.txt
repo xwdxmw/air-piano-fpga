@@ -1,0 +1,2 @@
+PASS WS2812 1440 decoded bits,30 pixels and black tail, GRB order,320/800ns high,900/600ns low,V5 low bounds,>=300us reset, frame snapshot
+tests/ws2812_protocol.v:22: $finish called at 2468430000 (1ps)

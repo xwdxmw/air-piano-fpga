@@ -1,0 +1,586 @@
+{
+  "baseline": "AP04",
+  "started_at": "2026-11-02T18:16:37+0800",
+  "passed": true,
+  "sources_unchanged": true,
+  "regression_count": 60,
+  "tests": [
+    {
+      "name": "pressure_zero_check",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 0.19
+    },
+    {
+      "name": "ttp_check",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 0.08
+    },
+    {
+      "name": "transpose_check",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 0.08
+    },
+    {
+      "name": "boot_check",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 0.08
+    },
+    {
+      "name": "debounce_check",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 0.17
+    },
+    {
+      "name": "queue_scoreboard",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 0.14
+    },
+    {
+      "name": "delay_clean",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 0.06
+    },
+    {
+      "name": "source_isolation",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 0.08
+    },
+    {
+      "name": "engine_idle_release",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 39.11
+    },
+    {
+      "name": "pt8211_words",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 0.08
+    },
+    {
+      "name": "guide_disable",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 0.08
+    },
+    {
+      "name": "guide_sync",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 44.89
+    },
+    {
+      "name": "runtime_entry",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 5.64
+    },
+    {
+      "name": "led_startup",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 0.09
+    },
+    {
+      "name": "strip30_top",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 82.28
+    },
+    {
+      "name": "guide_ws_chain",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 28.8
+    },
+    {
+      "name": "harp_bend",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 0.14
+    },
+    {
+      "name": "ws2812_protocol",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 0.17
+    },
+    {
+      "name": "scope_snapshot",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 0.09
+    },
+    {
+      "name": "lcd_protocol",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 28.88
+    },
+    {
+      "name": "scope_trigger",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 0.09
+    },
+    {
+      "name": "voice_edges",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 1.72
+    },
+    {
+      "name": "top_event_check",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 1.45
+    },
+    {
+      "name": "adc_check",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 5.5
+    },
+    {
+      "name": "harp_pending_check",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 0.08
+    },
+    {
+      "name": "pressure_path_check",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 0.44
+    },
+    {
+      "name": "no_lock_check",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 5.78
+    },
+    {
+      "name": "controls_check",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 0.08
+    },
+    {
+      "name": "i2s_standard_check",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 0.11
+    },
+    {
+      "name": "spectrum_check",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 1.08
+    },
+    {
+      "name": "pitch_ratio_check",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 0.12
+    },
+    {
+      "name": "mixer_smooth_check",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 0.06
+    },
+    {
+      "name": "lcd_spectrum_check",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 20.91
+    },
+    {
+      "name": "top_controls_check",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 4.64
+    },
+    {
+      "name": "latency_digital_check",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 2.84
+    },
+    {
+      "name": "force_equiv_check",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 1.03
+    },
+    {
+      "name": "bell_edges_check",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 23.69
+    },
+    {
+      "name": "bell_alias_check",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 0.14
+    },
+    {
+      "name": "bell_render",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 12.59
+    },
+    {
+      "name": "bell_poly32_check",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 122.97
+    },
+    {
+      "name": "zero_velocity_check",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 0.92
+    },
+    {
+      "name": "rom_truth_check",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 0.09
+    },
+    {
+      "name": "harp_equiv_check",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 2.3
+    },
+    {
+      "name": "flute_bank_check",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 0.44
+    },
+    {
+      "name": "flute_edges_check",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 3.17
+    },
+    {
+      "name": "flute_source_check",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 5.52
+    },
+    {
+      "name": "flute_poly32_check",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 57.08
+    },
+    {
+      "name": "flute_render",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 15.92
+    },
+    {
+      "name": "flute_rom_equiv_check",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 4.36
+    },
+    {
+      "name": "voice_status_check",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 0.09
+    },
+    {
+      "name": "lcd_poly32_check",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 64.61
+    },
+    {
+      "name": "poly32_visual_chain_check",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 245.01
+    },
+    {
+      "name": "adc_timing_ab_check",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 3.89
+    },
+    {
+      "name": "live_led_follow_check",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 0.08
+    },
+    {
+      "name": "normal_led_wire",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 387.38
+    },
+    {
+      "name": "poly32_slow_check",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 0.14
+    },
+    {
+      "name": "synth_shared_equiv",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 80.81
+    },
+    {
+      "name": "lcd_pixel_equiv",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 8.77
+    },
+    {
+      "name": "queue_equiv",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 4.31
+    },
+    {
+      "name": "ws_equiv",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 3.11
+    }
+  ],
+  "reset": {
+    "name": "reset_release_check",
+    "compile_exit": 0,
+    "run_exit": 0,
+    "passed": true,
+    "elapsed_seconds": 1.45,
+    "scenarios": 20
+  },
+  "source_sha256": {
+    "src/ads1256_driver.v": "c8ededcac4c26ea148909e2038cf4e6cf74863d59cbf8b4e48be74d8ede193da",
+    "src/bell_bank.v": "9f5810ca36ae7932318b8408eefd763ddc9749d9a7bb93111b9e01d40bc961b0",
+    "src/boot_select.v": "bfce1b8b982dd7b5f01c0d2bdb9ed9651afa3bf138e8894d04b7ddd756de753c",
+    "src/c_interact_top.v": "d9cb2ca3c2366980113fced928bfdea1def1d3170c3cda2002a888bbdf54cbea",
+    "src/c_sync_debounce.v": "37d669931a3d624d6ef95fafc62dba20d3ab380dc3cee3881986e96bd481ac3a",
+    "src/c_to_voice_adapter.v": "a7aaff776a31ccb27ed86630e7e9e51ebdb375c46e374fc2a2fcfd9c895a8ad4",
+    "src/cap_touch.v": "3164448dba5f8e8e15dd69011def7b137453b0aead004e81ce84fc3095020441",
+    "src/codec_init.v": "d14620c2aed5aea7a7cb5f5fa2e3855ddacb6ccbd717c6f31ca74a60adfec66d",
+    "src/delay_fx.v": "098af98dfaf594e5220a20190147a301461b3311b071f25364c6e6b6151cc2ee",
+    "src/demo_seq.v": "96e68c755d0887b47d486ef18fb4b92023e1718180fe89bfefee3a0567e2b60d",
+    "src/event_fifo.v": "998917ac713efcf469f866d57f6c9d9ac6f9d4e094faa5aa8beb1eeec7a06240",
+    "src/event_queue_multi.v": "bd9bb9e60df3462859e4866d730b0b0d5108a163b9d1bb2d2d8449d953326ad8",
+    "src/flute_bank.v": "58986710f1e342e41845c171f8675d09a2b4349103cef3c0f65afaeb0e833d6e",
+    "src/force_map.v": "d6a2631815ea2ee54dda3e0c717afdaa759526f0c87a3e6ce79ead9a924a4202",
+    "src/guide_led_map.v": "65e243458887a2bacb804cbc47b41cda3d886d495b87a7cbe15c1f2de7c3954c",
+    "src/guide_seq.v": "7eaed97c88fdf0127f7cf856d1e2c4ba070742768d33bed32b460f36d775ac90",
+    "src/lcd_panel.v": "f12d193cea18ba783024455ebe6922e556791ec5bc6ca4b109007137b4a5963a",
+    "src/led_startup_test.v": "b216dbf50d7201f65cee5df17aa833fe9a6b17334ae069d7bc4945337d94f6a0",
+    "src/live_led_follow.v": "3e61ad6a1d74fc108c96acb9d671367dd2d4344da549b71bae2c869b2b3e68d5",
+    "src/mixer.v": "9956d88c340d3ab49e582b572d3f146f1e0e6701904022bb776472d130ae9591",
+    "src/note_freq_rom.v": "39d4f8b8916a91c037c095d2f613de7de3265358c41eaa63a41557ddff4fcc57",
+    "src/note_transpose.v": "93e741d061c5abf18ad153d051a454006438cfe54b3d6e21214af8e109bf4cf1",
+    "src/optical_calib.v": "359a25ac4315b5c61d3a1a82073aea6bbeea8e0d8df3972fa29d499bd2b5f2f0",
+    "src/optical_harp.v": "bd9db62091fc72063024f27880a4498c2035a06f0b3bc501ed51e99b914c1351",
+    "src/optical_quantize.v": "8feff09996f8b5dd7ba7c256ad86e875a26c49641a440e5a8b51d9132811c7b9",
+    "src/osc_synth.v": "35c5c7b380808065ebb400f514bcf696fb4acbbe289db95eabc2358bcfb074d6",
+    "src/performance_controls.v": "b57196da07e2a5084e9a49d2284e4ae02d7abb9a04d259fcc59e92fef751c402",
+    "src/pll_init.v": "3ef05a1ba92157d73e3c54ed9d589645508a4ae332d8bcf133a0457cc3e866c8",
+    "src/poly32_seq.v": "efa0c7c5d0b811595bba58ce2772580432f9301c4be741789cc81d7cb2acce42",
+    "src/poly_mgr.v": "d3306a256e0fb269ef18c2de13df342ce9756fa776552f7a4959039d42d61300",
+    "src/pressure_calib.v": "4247129c073e6caa550aa4765f525f23bfd6490341b8b97f8e709f24927398f3",
+    "src/pressure_detect.v": "323d488a621a9880641e70c219c3cf7e30a4b646434f0ffc2155067e0d0776fb",
+    "src/pressure_key.v": "81aa11e49c366884d3ece866860015bba64f73b1b4f14f070e09ca937f3c1fed",
+    "src/pressure_zero.v": "ccebcfa1e0d4c77da9eaf5dfcecc8af99130537e2e3b483065288c1e7188afe1",
+    "src/pt8211_tx.v": "5eb5c04db4cfc3ae632bbf8d235333dac814174d39350d8e81adad7fb6298793",
+    "src/scope_cap.v": "d4df887c263d96357d062bb9e19814e44d0a879b42f0efd1d0786b4822b73d84",
+    "src/sine_rom.v": "dd7e0f0e8930fc53b6cb3c041a5eb60fc597fe5ec9e7eb5a8454c24c108bbb3c",
+    "src/spectrum16.v": "becbce96f55eb7963f886b20dbe2993f69fe4a13c1e07f26e6007f9c7f56c304",
+    "src/standard_i2s_tx.v": "6e81a279ec0df01602479569a3dab8927380acf57061b56d0313332430d887b3",
+    "src/top_board.v": "3dabaa5c519891595cd0c2a4b8d0ce0257c3add40847f66c9b168f85bd598f06",
+    "src/top_synth.v": "833577a59a3cac64f9cc18e7afeef7ef546be46e51035fea805506794e893489",
+    "src/top_system.v": "d649887b38d8001cab672b25484ee8b06afcfdd74730ce97adc5c1f80d58cdca",
+    "src/ttp_gestures.v": "ca021fafdb5d2bfdf72216963423fe88089c2ca9216f4209a38a9ed365776fa5",
+    "src/voice_array.v": "0937af3f862594043bde5c53d9ee421690e2e509eeef863406f4c161490926bb",
+    "src/voice_status_snapshot.v": "b945979aa23dfdbcb35ef350262baa87959d7482c2ddd0129b7fdc5f65db0365",
+    "src/voice_synth.v": "760ed55c3a28b5802723349245b631cfbe866c86dacaca0543269416dea7055e",
+    "src/ws2812_tx.v": "f383cd4cc28d2e95b2817c267a00f69588c8828f4bd2038b504967faa5f47ff0",
+    "tests/adc_check.v": "c14e42c237f3d9bf8874fbd5fda9b83f15211c697ba7d9eb45bc3ea2de18edce",
+    "tests/adc_timing_ab_check.v": "a5590d8ba5b7884d6e7579ed7bf01fa519a5eb6b269e844874076f721671c880",
+    "tests/bell_alias_check.v": "34f1b16f3b31fbb574fdffa609429ad2471c332f90254adafb0d39aa00aeed33",
+    "tests/bell_edges_check.v": "6e12046c2b16b4854be91d0e2d354dbd28c2c46c08e3a670fc5a852229be7a9c",
+    "tests/bell_poly32_check.v": "ea7ac406e028c2455df186d0d66230fd9680c298b27caa06871e299e331178b2",
+    "tests/bell_render.v": "a335cad97dc3e08e1cf3197430eb3878e02f91595ac9f9b69f9908ff4a4a5d7e",
+    "tests/boot_check.v": "4d34509f99523b22944cac3f6d0549e6e4b7738c65fc6de87d7533ac918af1f6",
+    "tests/controls_check.v": "155cc2ec66fbdbca23f68db59a9fe4a1a7ac97c87fde9aa703f58640f0bd742b",
+    "tests/debounce_check.v": "48a27cd729a89c25464d94f2a0b4d32594fdec6fa1e37cec5ddd2eb839b37811",
+    "tests/delay_clean.v": "71fc0e91c266f4a7a4e96a4cffcf9a9ada3ad1256c7efcdc8dc22b77acbdd2bb",
+    "tests/engine_idle_release.v": "500ed0e2d867779827953e3c8240e83110ba0767225956348aebe89661bcda73",
+    "tests/flute_bank_check.v": "a55e50dee46aab302c2aff0632a6b97e3f880ebddf673896b28b2d5693af27cc",
+    "tests/flute_bank_logic_reference.v": "2c110814dc525fe1175377ae3e3191e561d980d5392c6d0473fce3bb817365d6",
+    "tests/flute_edges_check.v": "b44d4926119cfbad12294f9e3bc57cdb8a6001e885fedb58bd60398eae711977",
+    "tests/flute_mapped_check.v": "521a49f5f0feac260e4a5f41a8f300f2c15f49457e00633e2de1d530b53233cb",
+    "tests/flute_poly32_check.v": "004a0678c03a6f2a78b9461f067f9be0a28e10f85cac8e79f6ae4fd42b1a39e2",
+    "tests/flute_render.v": "a844f4aa11a0f8a50b045c6a3d86b0ab91aacd8616a74ecc6beaffb3ca92931b",
+    "tests/flute_rom_equiv_check.v": "feb3dc3774e25e5b35f623b3395befd0fad751dfd59d79aac7472c81e4c7f161",
+    "tests/flute_source_check.v": "00268e2dd5136758bf893309ee1ab0e1fb0ec3696e3ee1e78a8d4de0c01f012a",
+    "tests/force_equiv_check.v": "8f7a49e55722026abf8d984f9a47eb98aa596c8bd965298012ebfe1c9ad0efbf",
+    "tests/force_map_reference.v": "94a7f4f45d422036e0cd7e2fc59ecac5b138d2e362bfebcddaed58e44091ab2f",
+    "tests/guide_disable.v": "4d757fb09b9420cbb7256a2f9950c7293e522d0d87e97709ffa8d90d516a1849",
+    "tests/guide_sync.v": "4f83ee3fc7699da3f672ea0b993802523131a7debacb7744c5f3e23101bbf494",
+    "tests/guide_ws_chain.v": "233f8c003b2ce0bce4f8052ef265a7ed6eef1af5bfed6396dada0ddafed2ea6d",
+    "tests/harp_bend.v": "6ec9749b6fd0258559bd0253267f9fc43ff75ef6b39df6907136b63e87cc7d6d",
+    "tests/harp_equiv_check.v": "dd6b635cc1f8f9a0ab7a14561d696ba1e2d49b2ba089276a6eb88a14ac4d1597",
+    "tests/harp_pending_check.v": "33bc08c2c55619a5af2a8f42b46be3be387d754fc859d076435988e84a0aa921",
+    "tests/i2s_standard_check.v": "d7ea588bd44f924c76d12110b9045abac703db67304e4211346f2b7c211b8a23",
+    "tests/latency_digital_check.v": "f68fe0cc1346b252ffa09ae0935e049c6e38af3f63d3d11348cb4a553fcd2d98",
+    "tests/lcd_pixel_equiv.v": "177049901e913b23c7a72393d911e6f2a39a31c5126622e5a95bdedd0b024af3",
+    "tests/lcd_poly32_check.v": "10c5e725128ed6b52efa74ab0e60f94ec2cdd843603fa7a9ce8f822f45e16a6b",
+    "tests/lcd_protocol.v": "f7601d62a49d22afd84551f87689a13b8ef17c707e7a71c0610297b51a4dece3",
+    "tests/lcd_spectrum_check.v": "49791d54ba741bb8537185d5915134bb3fea66635d43bcef5e368b882f39c551",
+    "tests/led_startup.v": "69633a293e45b6bf9c627314499d28beecbb6b2c11a653ae6a4e2770aec2b321",
+    "tests/legacy/tb_ads1256.v": "324e7459d04e699aaf597799e582fc3e38ce61baa45be2022d807aad4db84406",
+    "tests/legacy/tb_autozero.v": "286945088a132979ebf91c0c12be1be5c56bbcc1b8591b72e3c5badfe11905d9",
+    "tests/legacy/tb_cap_touch.v": "351b539fd902eed02fe5ddb9e5b0c6b16c34214075a65a0c6713cf07b63e4c1e",
+    "tests/legacy/tb_collide.v": "15fa5ebc62273b49cd5a5d5cb79d938c950ea669e7cdc16e13b7b0651ef44b5e",
+    "tests/legacy/tb_collide2.v": "9390520e10e4c78af2ecc7986e05bc5a1a1ab8a7f3c514675271cfe267b7b4e3",
+    "tests/legacy/tb_demo_seq.v": "13a446f770f833bdc910e93861f86d80f19778c12e94c3912f612423e78b0ece",
+    "tests/legacy/tb_eight_keys.v": "2d79b35d2ff6e2c18a28ffdaa781d22f4fa28afeef0839be5618ce2db4e41aec",
+    "tests/legacy/tb_event_fifo.v": "5f8a373d3a8c9cfdceeb3ad24784090fc388da11cffec649d98030f350509be8",
+    "tests/legacy/tb_harp.v": "31169b42df0e65bc4eed719368e56356b6c24c9421b3d760601d33f850be40f2",
+    "tests/legacy/tb_key_mask.v": "6091bd5d082187d2abfbc2c0d6be6ebf63d0536f3843c55627a6c4161f803967",
+    "tests/legacy/tb_lfo.v": "64eee5ba0579d8f21aca6e51040b5ebce68a45a121595c38f90fa26d5f740b25",
+    "tests/legacy/tb_mode_switch.v": "1c293a29b3ec0758d5d24b1cf42506ac4442867c2fee6a89e9f33ace4e0e223c",
+    "tests/legacy/tb_optical_harp.v": "b51669dfe00d2b1ed3e80fd87a6cc9f753d2a7d210d931dc16f0a5ee29a53d4c",
+    "tests/legacy/tb_poly_mgr.v": "035af42f59abfe1f76ab22ec2b90f17812350a61f06903a1044ccc69b84c1ad1",
+    "tests/legacy/tb_pressure_key.v": "622c73d1f77223c41fe770b075a96b1d957c507f0f798c3e0986caed47a49b94",
+    "tests/legacy/tb_pt8211_tx.v": "bf7abbfc14a52c3b4cd5145bb769a3ed8d6ca7afb062617bc7bd792a4417f4a4",
+    "tests/legacy/tb_push.v": "6dfe5e4511414034148752392a27c5c302327be518ea8b8a1de1b6757ca56f8e",
+    "tests/legacy/tb_push2.v": "5649d0b3455ec020ef0c9451f4c443a3dc8e513aa7723da177971dfc738f54b4",
+    "tests/legacy/tb_touch.v": "1c51cfb652d2239074ff1ad8acded853c62fdd556f733881cdf8849cb5c931c9",
+    "tests/legacy/tb_voice_check.v": "0cf5cbd31bf4e0acf44bb2266477b6ec4a05f2eefc76d5a5850364a2106e4ff1",
+    "tests/live_led_follow_check.v": "933787436577a71cc121ff5f219314691f77af3515ee229d1c0566c36ac9b201",
+    "tests/mixer_smooth_check.v": "635cdd4dff094d8ba4cb36dc9cca275fc4aecd6c7ee3f45d12a782ffa02a1a43",
+    "tests/no_lock_check.v": "0ac6c6ab4cda61239220768bb735b992a9a598dc5e14e8ed83aa153f2674117b",
+    "tests/normal_led_wire.v": "d7947785fa428b46069f38c04deaa8a71ed0ea58149498a09a81e9549847023f",
+    "tests/old_warm_evidence.v": "0bc8d7933005775eaf261fd287becc81ecc011ef12de1654e9e719a67e72ba49",
+    "tests/old_ws_v5_evidence.v": "74d1da817760dfef9907b9bc1e442a0d02b719d7a146484b01b895b696bec3b7",
+    "tests/old_zero_evidence.v": "b577bc22bb322767c207d1688b384b220645b856152fe579306e60d4931b963c",
+    "tests/pitch_ratio_check.v": "ae5c1168575b93a302c61aeed5c98c7c1136f7d45b1490791ce3d9c078397861",
+    "tests/pll_sim.v": "74dcc6e16624fedb841bf7c125dd11e8ff0fb15a178b80ae81ae0596d3f5321b",
+    "tests/poly32_slow_check.v": "97b578dc7a98263bc45c7b7a792b55124526b49cb21f31adc9d19828a0270286",
+    "tests/poly32_visual_chain_check.v": "eedf1888e7943cd4c3453dc5a4fbbcf7fa4670e8fe5ad8d2d2499364a847e661",
+    "tests/pressure_path_check.v": "059861a9a7a20fec6445a3b696eee3e3b4926ee330189253c22cada4c4768d36",
+    "tests/pressure_zero_check.v": "173152481483f21d525a56ff995aa6ad938323938cad29df0bab2725630f2829",
+    "tests/pt8211_words.v": "d8a88f50aa4e0f82f6e93a3b376e7277d014d5ffce04b041294aaff2e8a11f37",
+    "tests/queue_equiv.v": "23a8fe72561a266b5c20402c8e3a919ae5520fa1e9b7f24783dfcf408592b503",
+    "tests/queue_scoreboard.v": "fff5681c3476ae0bb2e3ea7eb1e28a150fae7e07ef75d45158394b5125aa7f84",
+    "tests/reference/event_queue_multi.v": "9142fff58d5bf2e2d5c8dd3541afafe87cbc33be967b74487c64d52279bc2c29",
+    "tests/reference/lcd_panel.v": "90901722321c268d944ccb8be0a99c5cd4a5a1637fd7ced55b98c6c5e03f7035",
+    "tests/reference/poly_mgr.v": "02af684a88869d9ed940e15f5783ce9e9c583b67441fc5479830986dea4e9714",
+    "tests/reference/top_synth.v": "16548a7fa631e98c04cbcf6b266cae792316e263e8a247bdfd9cf9d419a25f2f",
+    "tests/reference/voice_array.v": "5f8888d570413428991fbae13cc4e3d9d19770c4e6fcd41c1e0b71269287a3ec",
+    "tests/reference/voice_synth.v": "bdc62293f3f6ec6d13f1adfbaed790612121a538939dc9ede51688a03838dc00",
+    "tests/reference/ws2812_tx.v": "feeb8bc67ad47622592ab0b5bccf98fe9ccf6d2875b131fa9ca2cb31647ee393",
+    "tests/render_voice.v": "2b6a02c689377a2dec6fcd1aa5682156f37254d7e43193d090e385a235da5bdd",
+    "tests/reset_release_check.v": "3e8ef3cb64ee85ab42c012118f4dca7d2286157f7d89cd2549acde7c2323f06b",
+    "tests/rom_references.v": "b19a255507d96698076772c020784976d91185903ce54c9dac47991073c4af63",
+    "tests/rom_truth_check.v": "50810b647629fff85ad5d9519dc964eddbf62633caefb881051474815970ebef",
+    "tests/runtime_entry.v": "7936eaf791bdd0a2561f52838449ffba9905dceead22bc0ae3bf9f1171edd621",
+    "tests/scope_snapshot.v": "5daf44d7dff411856179cb466cc180d90c49cfd2605dcb1c5d6f673743960b47",
+    "tests/scope_trigger.v": "f6fbb591940fd33dcac64cce27c1ac7d40469f5ea94479252c7ba10d4fb97180",
+    "tests/source_isolation.v": "c22be3f414e5bfec83e24ee720642fa136c2074d9eefbd6f27e441b1f5435611",
+    "tests/spectrum_check.v": "ab4c3b6d27b7137e0fff982e054516da894e98de44493ce2b4ecd72f9fc37c37",
+    "tests/strip30_top.v": "91be1109e5219f3e10bb72d1c18193ee355e44917593d7e898bb3277207e5e29",
+    "tests/synth_shared_equiv.v": "a184f4bd5e44d028778cf6c39c1fd1468b233667a90ae77c7663f5fff8045bbe",
+    "tests/top_controls_check.v": "58544de211400c03a71ec4bcfba39292c9c0871e75ef182e5649d02e751af318",
+    "tests/top_event_check.v": "4a46d8476ab6eff70b5ba03b22218dfe2226129fa297b45c9e5bbed07f1cb4d4",
+    "tests/transpose_check.v": "1ec1bc7991745a1cff1a9cec0bfb9f9161fbc33deb29d6a45adc24ec50f226df",
+    "tests/ttp_check.v": "0b0bc56096fcdd3367bd91cbd38baed98fc923b98da53f28f27dbcb8a4489931",
+    "tests/voice_edges.v": "3c635e4fa293defcc3c87a2261ab90b3e6bac170b2e2bb86a8cb94de4688e3ab",
+    "tests/voice_r5m_reference.v": "f4229f8f58de61e707b67949ad8b429ca0579fe7703f39602ea47aede7d8923e",
+    "tests/voice_reference.v": "70a05933ff3de6882a5b23946ccf98d89c2cb56c5a875451591e5b6d1458f8f8",
+    "tests/voice_status_check.v": "c0e111f0a56523b6dbe10dd0cf5d4a416726ac9361d3c48e4a32d88769e9bad9",
+    "tests/ws2812_protocol.v": "4d5cb3d32072c7b88e4d775d3c5b84c02ff9e57eb4b11947087e038069e9d475",
+    "tests/ws_equiv.v": "e4be2d73d6b4e47180620f20bd8d5e03b3d44b93603a60abb2b6d94f09219814",
+    "tests/zero_velocity_check.v": "91523fec0b2e92577eee476ffcd838d97ff77319c709550604cb2910159a3d14"
+  },
+  "limitations": "RTL simulation with behavioral PLL; not physical PLL, analog latency, cold boot, or peripheral validation."
+}

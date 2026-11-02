@@ -1,0 +1,2 @@
+PASS LCD init, SPI decode,two composite landscape frames, bounds,exact RGB565 byte counts,landscape MADCTL,frame pixels and state snapshot,no-audio fallback
+tests/lcd_protocol.v:30: $finish called at 57063150000 (1ps)

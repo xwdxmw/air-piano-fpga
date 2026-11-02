@@ -1,0 +1,2 @@
+PASS full 14-note Twinkle, matching key/light and audio CDC events, repeated-note gaps, green hit, nonzero PCM without ADC
+tests/guide_sync.v:41: $finish called at 5751280000 (1ps)

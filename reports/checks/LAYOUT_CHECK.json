@@ -1,0 +1,25 @@
+{
+  "baseline": "AP04",
+  "original_git_commit": "bbec0c8d8d14b62549cfa6c58bf6374aafba8481",
+  "all_75_original_source_and_constraint_files_preserved_lf": true,
+  "main_rtl_content_changed": false,
+  "constraints_and_pll_changed": false,
+  "historical_rtl_moved": 3,
+  "historical_testbenches_moved": 20,
+  "project_entries_removed_only": [
+    "src/clk_div.v",
+    "src/i2s_tx.v"
+  ],
+  "remaining_project_entries_preserved": true,
+  "project_files_exist": true,
+  "tcl_options_byte_identical": true,
+  "regression_selection_identical": true,
+  "regression_sources_preserved": 79,
+  "regressions_passed": 60,
+  "behavioral_reset_scenarios_passed": 20,
+  "markdown_links_checked": 8,
+  "new_synthesis_run": false,
+  "new_board_test": false,
+  "sealed_ap04_fs_sha256_unchanged": "893EB898045665B969FAB0B20D3F1AD60CD6D66A46C74B495BAB40C88D76709B",
+  "note": "Only repository layout, documentation and portable wrappers changed. Historical reports remain original."
+}

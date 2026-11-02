@@ -1,0 +1,3 @@
+PASS 32-voice engine idle is exact zero with known controls
+PASS 32 NOTE_ON followed by 32 NOTE_OFF recovers all slots and silence
+tests/engine_idle_release.v:19: $finish called at 3727200000 (1ps)

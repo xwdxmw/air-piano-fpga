@@ -1,0 +1,2 @@
+PASS 60000 samples harp is bit-for-bit identical to r5l across notes,velocity update,bend immunity,vibrato,retrigger and natural release
+tests/harp_equiv_check.v:24: $finish called at 2400040000 (1ps)

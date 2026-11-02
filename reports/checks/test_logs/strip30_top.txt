@@ -1,0 +1,2 @@
+PASS actual top emits30-pixel720-bit frames,first8active,last22black across2frames
+tests/strip30_top.v:16: $finish called at 11757990000 (1ps)

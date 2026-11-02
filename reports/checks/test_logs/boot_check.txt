@@ -1,0 +1,2 @@
+PASS four boot combinations, no premature 32-note sequence
+tests/boot_check.v:11: $finish called at 2880000 (1ps)

@@ -1,0 +1,2 @@
+PASS asynchronous snapshot handshake, DEC=3, no undefined startup data, immutable frame, next capture updates
+tests/scope_snapshot.v:19: $finish called at 83620000 (1ps)

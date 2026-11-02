@@ -1,0 +1,2 @@
+PASS all128 note words/all256 sine words identical; constant-address outputs are known at startup
+tests/rom_truth_check.v:10: $finish called at 2570000 (1ps)

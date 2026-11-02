@@ -1,0 +1,2 @@
+PASS AP03 bit-exact32-slot PCM/masks/envelopes, all128 MIDI notes, owner/timbre variants, velocity updates, zero-velocity, all128 bend values, signed vibrato, release/ALL_OFF (197326 comparisons/24668 samples)
+tests/synth_shared_equiv.v:41: $finish called at 1973440000 (1ps)

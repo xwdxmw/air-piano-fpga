@@ -1,0 +1,2 @@
+PASS independent 64-sample zero, fast channel frozen, missing lane isolated, stale release and recovery
+tests/pressure_zero_check.v:16: $finish called at 406621000 (1ps)

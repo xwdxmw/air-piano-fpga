@@ -1,0 +1,2 @@
+PASS raw TTP -> debounce -> runtime entry/exit, delayed cold touch, release octave, 8s one-shot hold, poly32 stays locked until reset; no forced mode wires
+tests/runtime_entry.v:28: $finish called at 585400000 (1ps)

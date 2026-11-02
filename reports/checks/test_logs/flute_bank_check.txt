@@ -1,0 +1,2 @@
+PASS all768 flute table entries bounded/antisymmetric; harmonic omission thresholds, frequency sweep, clear and idle-noise gate
+tests/flute_bank_check.v:19: $finish called at 101050000 (1ps)

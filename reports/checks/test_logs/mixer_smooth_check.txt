@@ -1,0 +1,2 @@
+PASS smooth gain convergence/return, bounded per-sample gain transition and signed saturation
+tests/mixer_smooth_check.v:13: $finish called at 12120000 (1ps)

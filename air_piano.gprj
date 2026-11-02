@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW5AST-138B" pn="GW5AST-LV138FPG676AC1/I0">gw5ast138b-007</Device>
+    <FileList>
+        <File path="src/live_led_follow.v" type="file.verilog" enable="1" />
+        <File path="src/voice_status_snapshot.v" type="file.verilog" enable="1" />
+        <File path="src/flute_bank.v" type="file.verilog" enable="1" />
+        <File path="src/bell_bank.v" type="file.verilog" enable="1" />
+        <File path="src/performance_controls.v" type="file.verilog" enable="1" />
+        <File path="src/standard_i2s_tx.v" type="file.verilog" enable="1" />
+        <File path="src/spectrum16.v" type="file.verilog" enable="1" />
+        <File path="src/guide_led_map.v" type="file.verilog" enable="1" />
+        <File path="src/led_startup_test.v" type="file.verilog" enable="1" />
+        <File path="src/event_queue_multi.v" type="file.verilog" enable="1" />
+        <File path="src/boot_select.v" type="file.verilog" enable="1" />
+        <File path="src/note_transpose.v" type="file.verilog" enable="1" />
+        <File path="src/ttp_gestures.v" type="file.verilog" enable="1" />
+        <File path="src/pressure_zero.v" type="file.verilog" enable="1" />
+        <File path="src/ads1256_driver.v" type="file.verilog" enable="1" />
+        <File path="src/c_interact_top.v" type="file.verilog" enable="1" />
+        <File path="src/c_sync_debounce.v" type="file.verilog" enable="1" />
+        <File path="src/c_to_voice_adapter.v" type="file.verilog" enable="1" />
+        <File path="src/cap_touch.v" type="file.verilog" enable="1" />
+        <File path="src/codec_init.v" type="file.verilog" enable="1" />
+        <File path="src/delay_fx.v" type="file.verilog" enable="1" />
+        <File path="src/demo_seq.v" type="file.verilog" enable="1" />
+        <File path="src/event_fifo.v" type="file.verilog" enable="1" />
+        <File path="src/force_map.v" type="file.verilog" enable="1" />
+        <File path="src/gowin_pll/gowin_pll.v" type="file.verilog" enable="1" />
+        <File path="src/gowin_pll/gowin_pll_mod.v" type="file.verilog" enable="1" />
+        <File path="src/lcd_panel.v" type="file.verilog" enable="1" />
+        <File path="src/mixer.v" type="file.verilog" enable="1" />
+        <File path="src/note_freq_rom.v" type="file.verilog" enable="1" />
+        <File path="src/optical_calib.v" type="file.verilog" enable="1" />
+        <File path="src/optical_harp.v" type="file.verilog" enable="1" />
+        <File path="src/optical_quantize.v" type="file.verilog" enable="1" />
+        <File path="src/osc_synth.v" type="file.verilog" enable="1" />
+        <File path="src/pll_12m288.v" type="file.verilog" enable="1" />
+        <File path="src/pll_init.v" type="file.verilog" enable="1" />
+        <File path="src/poly32_seq.v" type="file.verilog" enable="1" />
+        <File path="src/poly_mgr.v" type="file.verilog" enable="1" />
+        <File path="src/pressure_calib.v" type="file.verilog" enable="1" />
+        <File path="src/pressure_detect.v" type="file.verilog" enable="1" />
+        <File path="src/pressure_key.v" type="file.verilog" enable="1" />
+        <File path="src/pt8211_tx.v" type="file.verilog" enable="1" />
+        <File path="src/scope_cap.v" type="file.verilog" enable="1" />
+        <File path="src/sine_rom.v" type="file.verilog" enable="1" />
+        <File path="src/top_board.v" type="file.verilog" enable="1" />
+        <File path="src/top_synth.v" type="file.verilog" enable="1" />
+        <File path="src/top_system.v" type="file.verilog" enable="1" />
+        <File path="src/ws2812_tx.v" type="file.verilog" enable="1" />
+        <File path="src/guide_seq.v" type="file.verilog" enable="1" />
+        <File path="src/voice_array.v" type="file.verilog" enable="1" />
+        <File path="src/voice_synth.v" type="file.verilog" enable="1" />
+        <File path="src/pin_airpiano_138k.cst" type="file.cst" enable="1" />
+        <File path="src/clk.sdc" type="file.sdc" enable="1" />
+    </FileList>
+</Project>

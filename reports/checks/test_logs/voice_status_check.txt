@@ -1,0 +1,2 @@
+PASS coherent32-bit snapshots/count0..32,100 random masks, immutable frames, audio-only/display-only resets and pending-handshake recovery
+tests/voice_status_check.v:28: $finish called at 157391000 (1ps)

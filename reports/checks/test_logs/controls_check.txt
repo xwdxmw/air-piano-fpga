@@ -1,0 +1,2 @@
+PASS independent timbre, smooth bend/return, debounce, no hold retrigger, boot release arm and test lock
+tests/controls_check.v:13: $finish called at 7470000 (1ps)

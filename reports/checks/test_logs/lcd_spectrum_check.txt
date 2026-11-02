@@ -1,0 +1,2 @@
+PASS real PCM -> full-rate spectral analyzer -> acknowledged LCD frame -> actual yellow bin8 bar and timbre/version status
+tests/lcd_spectrum_check.v:15: $finish called at 34529540000 (1ps)

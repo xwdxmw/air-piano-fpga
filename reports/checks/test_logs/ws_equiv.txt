@@ -1,0 +1,4 @@
+PASS AP03 WS waveform cycle-exact N30,299999 cycles,5 frame starts, changing input snapshots and midframe reset
+PASS AP03 WS waveform cycle-exact N8,299999 cycles,9 frame starts, changing input snapshots and midframe reset
+PASS AP03 WS waveform cycle-exact N1,299999 cycles,13 frame starts, changing input snapshots and midframe reset
+tests/ws_equiv.v:33: $finish called at 6000280000 (1ps)

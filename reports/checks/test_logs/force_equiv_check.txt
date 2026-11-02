@@ -1,0 +1,2 @@
+PASS 30000 changing/random/boundary force inputs, exact value AND pipeline latency match original multiplier reference
+tests/force_equiv_check.v:14: $finish called at 300100000 (1ps)

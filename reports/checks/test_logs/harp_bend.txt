@@ -1,0 +1,2 @@
+PASS pressure bends piano only; global vibrato reaches both timbres
+tests/harp_bend.v:19: $finish called at 1162000 (1ps)

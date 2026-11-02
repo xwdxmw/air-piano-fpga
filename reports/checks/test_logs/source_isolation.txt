@@ -1,0 +1,2 @@
+PASS same-pitch piano/harp/beep/guide own independent release and velocity
+tests/source_isolation.v:18: $finish called at 420000 (1ps)

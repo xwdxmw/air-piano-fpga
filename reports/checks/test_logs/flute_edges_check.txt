@@ -1,0 +1,2 @@
+PASS flute long sustain, per-note selector latch, S2/vibrato, bidirectional velocity correction, min velocity, release/retrigger/reset silence
+tests/flute_edges_check.v:29: $finish called at 3767840000 (1ps)

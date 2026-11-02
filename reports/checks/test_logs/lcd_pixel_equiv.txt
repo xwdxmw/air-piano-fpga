@@ -1,0 +1,2 @@
+PASS 327680 AP03-equivalent base pixels in16 complete160x128 scenarios, N/G/T and all UI layers, spectrum quotient/remainder; reference label normalized toAP04
+tests/lcd_pixel_equiv.v:33: $finish called at 369140000 (1ps)

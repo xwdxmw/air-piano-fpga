@@ -1,0 +1,5 @@
+INFO real engine snapshot mask=00000000 time=             1509000
+INFO real engine snapshot mask=ffffffff time=          1688817000
+INFO real engine snapshot mask=00000000 time=          3375716000
+PASS real poly32_seq -> event queue/CDC ->32 actual synthesis slots -> coherent LCD32/32 frame -> ALL_OFF -> LCD0/32; no forced active mask
+tests/poly32_visual_chain_check.v:26: $finish called at 3584330000 (1ps)

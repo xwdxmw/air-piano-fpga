@@ -1,0 +1,2 @@
+PASS actual pt8211_tx: 46 decoded words incl zero, signed extrema and alternating bits; 16 bits/WS half
+tests/pt8211_words.v:26: $finish called at 491640000 (1ps)

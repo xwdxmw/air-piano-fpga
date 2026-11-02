@@ -1,0 +1,2 @@
+PASS low velocity >=1 step, latched timbre, velocity decrease, clean release and retrigger priority
+tests/voice_edges.v:17: $finish called at 8200800000 (1ps)

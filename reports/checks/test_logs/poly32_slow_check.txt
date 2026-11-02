@@ -1,0 +1,2 @@
+PASS default32-note timing:64 ordered NOTE_ONs,200ms per slot,6.2s first-to-last,6.4s load stage,10s extra full hold,3s release gap,two ALL_OFF; timestep-scaled not board measurement
+tests/poly32_slow_check.v:28: $finish called at 718140000 (1ps)

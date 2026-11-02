@@ -1,0 +1,2 @@
+PASS source2 retains all32 active beyond2.5s,65536 actual RTL PCM samples for FFT, clean ALL_OFF; bell mode isolated
+tests/bell_poly32_check.v:23: $finish called at 5900030000 (1ps)

@@ -1,0 +1,2 @@
+PASS 3 cycles x 5 simultaneous live/guide events preserved with independent owners
+tests/top_event_check.v:20: $finish called at 30160000 (1ps)

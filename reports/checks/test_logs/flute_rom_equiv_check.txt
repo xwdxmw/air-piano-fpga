@@ -1,0 +1,2 @@
+PASS50000 cycle-exact BSRAM-vs-logic flute PCM incl frequency/band changes immediately before sample, every-cycle enables, gaps, reset,start,clear and noise sequence
+tests/flute_rom_equiv_check.v:18: $finish called at 500021000 (1ps)

@@ -1,0 +1,2 @@
+PASS actual PCM spectrum: silence/single/two tones, correct frequency bins, full-rate budget, asynchronous immutable snapshot
+tests/spectrum_check.v:25: $finish called at 5243588000 (1ps)

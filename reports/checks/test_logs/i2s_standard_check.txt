@@ -1,0 +1,2 @@
+PASS standard I2S independent serial decoder: 149 signed stereo words, one-bit WS lead,16bit/channel; actual top_board STANDARD_I2S branch 31 decoded nonzero words
+tests/i2s_standard_check.v:44: $finish called at 386051130 (1ps)

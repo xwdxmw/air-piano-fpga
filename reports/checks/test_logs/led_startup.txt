@@ -1,0 +1,2 @@
+PASS 8-pixel sweep,all RGB,dark,one-shot handover
+tests/led_startup.v:18: $finish called at 4500000 (1ps)

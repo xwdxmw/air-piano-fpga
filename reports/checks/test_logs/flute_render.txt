@@ -1,0 +1,2 @@
+PASS actual RTL bell/flute/harp C4+C5, velocity90 0.8s gate/0.6s release
+tests/flute_render.v:20: $finish called at 16097080000 (1ps)

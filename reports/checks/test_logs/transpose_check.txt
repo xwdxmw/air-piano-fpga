@@ -1,0 +1,2 @@
+PASS octave changes new notes only; OFF and VU use held piano pitch, harp independent
+tests/transpose_check.v:11: $finish called at 181000 (1ps)

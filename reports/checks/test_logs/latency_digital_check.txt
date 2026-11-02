@@ -1,0 +1,4 @@
+INFO valid ADC sample -> first nonzero final PCM = 97620 ns (excludes conversion/scan and analog DAC)
+INFO IR DO edge -> first nonzero final PCM = 124271 ns (excludes sensor and analog DAC)
+PASS bounded digital paths only; board end-to-end latency and jitter still require measurement
+tests/latency_digital_check.v:20: $finish called at 230391270 (1ps)
