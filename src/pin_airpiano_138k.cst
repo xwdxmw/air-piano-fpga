@@ -1,0 +1,179 @@
+//====================================================================
+// pin_138k.cst —— Tang Mega 138K Pro 真实引脚约束（队员 B）
+//
+// 板卡：Sipeed Tang Mega 138K Pro（GW5AST-LV138FPG676A / FCPBG676A / Ver.B）
+// 依据：
+//   ① 官方例程 cst（hardware_ref/tang_mega_138k-pro_pins.cst）
+//   ② Dock 原理图 4071f（p18 FPGA-Audio：PT8211-S DAC；
+//      p15 PERIPHERALS：按键/LED；p16 EX_CONN：PMOD/SSPI 复用）
+//
+// 【板载音频链（原理图 p18 确认）】
+//   PT8211-S（U6）= 16bit 立体声 I2S DAC，免配置、无 I2C、无 MCLK：
+//     I2S_BCK → E22.5（HP_BCK）
+//     I2S_LRCK→ F24.4（HP_WS，低=左）
+//     I2S_DIN → G24.4（HP_DIN）
+//   → 经 LMV321 滤波 → XPT8892 耳机功放 → 3.5mm；
+//   → BL1551 喇叭功放 → SPK_OUT。
+//   → 故本设计 USE_PT8211=1：不绑 MCLK、不绑 I2C。
+//====================================================================
+
+//----------------- 时钟与复位（板上固定，勿改）------------------
+IO_LOC "clk_50m"  P16;        // 板载 50MHz 主晶振（SOM）
+                              // P16 is EMCCLK, not a dedicated GCLK input. Keep the board oscillator connection.
+IO_PORT "clk_50m" IO_TYPE=LVCMOS33 PULL_MODE=NONE;
+
+// S0 on the Dock: verified against Sipeed key_led/src/key_led.cst (rst_n=K16).
+// U4 is the SOM USR_KEY (SW5), active HIGH in official 4071 schematic;
+// it is not this active-low reset input. Earlier U4/LVCMOS15 mapping was wrong.
+// Sipeed official key_led: key0=F15, key1=G15, both active-low.
+IO_LOC "key_bend_n" F15;
+IO_PORT "key_bend_n" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+IO_LOC "key_timbre_n" G15;
+IO_PORT "key_timbre_n" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+IO_LOC "rst_n" K16;  // Dock S0, active-low program reset
+IO_PORT "rst_n" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+//----------------- I2S → 板载 PT8211-S（原理图 p18 确认）----------
+IO_LOC "bclk"     E22;        // HP_BCK
+IO_LOC "ws"       F24;         // HP_WS / LRCK
+IO_LOC "dacdat"   G24;        // HP_DIN
+// mclk：PT8211 无 MCLK 脚，不绑引脚（top_board 里 assign mclk=0）
+// i2c_sda / i2c_scl：PT8211 免配置，不绑引脚（USE_PT8211=1）
+
+IO_PORT "bclk"    IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8;
+IO_PORT "ws"      IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8;
+IO_PORT "dacdat"  IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8;
+
+//----------------- codec_ready → 板载 LED（上板观察用）----------
+// V11 是专用 READY 引脚（下载状态指示），不能当普通 IO，注释掉。
+// 上板时改用其他 LED 或不观察此信号。
+//IO_LOC "codec_ready" V11;
+//IO_PORT "codec_ready" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=4;
+
+//----------------- C 事件总线（接 PMOD，联调定线序）--------------
+// 需要 18 根输入：event_valid / event_on / mode / all_notes_off 各 1
+//   + event_num[6:0] 7 根 + event_vel[6:0] 7 根。
+// PMOD 球位（均 3.3V，cst 官方）：
+//   PMOD0[0..7] = T24 / R17 / L24 / R16 / N17 / N26 / M26 / N18
+//   PMOD1[0..7] = H15 / H14 / L18 / L17 / D25 / E25 / B24 / C24
+//   PMOD2[0..7] = A18 / A17 / A19 / B19 / A20 / B20 / B21 / C21
+// ★注意 PMOD0 复用（原理图 p16）：T24=SSPI_IO3、R17=SSPI_WP、
+//   L24=SSPI_IO1、R16=MIC_BCK、N17=SSPI_CS/MIC_DO、N26=LED_DAT、
+//   M26=LED_CLK、N18=SSPI_SO。若 PMOD0 要接 C 的光电信号，优先选
+//   不与 SPI Flash 冲突的脚（N17/R17/T24/L24 被占用时改用 PMOD1/2）。
+//   具体 IO_LOC 待 C 接线方案定后补全。
+
+//----------------- 红外对射竖琴（8 路，PMOD1 全 8 脚）----------------
+//   PMOD1[0..7] = H15/H14/L18/L17/D25/E25/B24/C24（2×6 排针）
+//   每对红外接收模块的数字输出 DO → sensor_gpio[i]（i=0..7）。
+//   光路“通→收红外”，“手挡→收不到”=拨弦；音符按 i 升序 C4..C5。
+//
+//   极性：默认 IR_ACTIVE_LOW=1（遮挡时 DO 输出低，LM393 开漏）。
+//   PULL_UP：模块断线/未接时 GPIO 被上拉为高 = 未遮挡，不会误触发（安全侧）。
+//   若实测遮挡时 DO 为高，把 top_system 里 IR_ACTIVE_LOW 改 0，并把下面
+//   8 个 PULL_MODE 改成 DOWN（悬空同样应落在“未遮挡”侧）。
+//
+//   ★供电：8 对红外（发射 LED 电流大，约 100~200mA）用独立面包板 3.3V
+//     电源供电，不要从 PMOD 取 3.3V；只把 8 根 DO 接 PMOD1 信号脚，
+//     并把面包板 GND 与 PMOD1 的 GND 排针（Pin5/11）至少接 1 根共地。
+//   标准 2×6 排针：Pin1~4=IO0~3、Pin5=GND、Pin6=3.3V、
+//                  Pin7~10=IO4~7、Pin11=GND、Pin12=3.3V。
+IO_LOC "sensor_gpio[0]" H15;   // PMOD1[0] → 弦1(C4)
+IO_LOC "sensor_gpio[1]" H14;   // PMOD1[1] → 弦2(D4)
+IO_LOC "sensor_gpio[2]" L18;   // PMOD1[2] → 弦3(E4)
+IO_LOC "sensor_gpio[3]" L17;   // PMOD1[3] → 弦4(F4)
+IO_LOC "sensor_gpio[4]" D25;   // PMOD1[4] → 弦5(G4)
+IO_LOC "sensor_gpio[5]" E25;   // PMOD1[5] → 弦6(A4)
+IO_LOC "sensor_gpio[6]" B24;   // PMOD1[6] → 弦7(B4)
+IO_LOC "sensor_gpio[7]" C24;   // PMOD1[7] → 弦8(C5)
+
+IO_PORT "sensor_gpio[0]" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+IO_PORT "sensor_gpio[1]" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+IO_PORT "sensor_gpio[2]" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+IO_PORT "sensor_gpio[3]" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+IO_PORT "sensor_gpio[4]" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+IO_PORT "sensor_gpio[5]" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+IO_PORT "sensor_gpio[6]" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+IO_PORT "sensor_gpio[7]" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+//----------------- TTP223 触摸切换（验收第三项）-----------------
+//   TTP223 模块：VCC→3.3V，GND→GND，OUT→本脚。
+//   原占用 PMOD1[0]=H15，因 PMOD1 整排给 8 路红外，改到 PMOD2[6]=B21
+//   （PMOD2 的 [0..5] 给 ADS1256，[7]=C21 留空）。
+//   PULL_DOWN：未接模块或高阻时保持低电平（=钢琴），防悬空。
+IO_LOC "touch_raw" B21;        // PMOD2[6]
+IO_PORT "touch_raw" IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
+
+//----------------- ADS1256 24bit ADC（8 路 FSR 压力）----------------
+//   6 根信号线全部接 PMOD2（3.3V，未与 SPI Flash/MIC/LED 复用，安全）。
+//   PMOD2[0..7] = A18/A17/A19/B19/A20/B20/B21/C21
+// ADC supply must follow the actual module schematic: ADS1256 AVDD is 5V; digital IO must be 3.3V-compatible. Common ground required.
+// Use independent DRDY. Do not tie ads_drdy to DOUT.
+IO_LOC "ads_sclk"     A18;   // PMOD2[0] → SCLK（输出，约1.56MHz）
+IO_LOC "ads_mosi"     A17;   // PMOD2[1] → DIN（主机输出）
+IO_LOC "ads_miso"     A19;   // PMOD2[2] ← DOUT（输入）
+IO_LOC "ads_cs_n"     B19;   // PMOD2[3] → CS（低有效）
+IO_LOC "ads_drdy"     A20;   // PMOD2[4] ← DRDY（低有效）
+IO_LOC "ads_reset_n"  B20;   // PMOD2[5] → RESET（正常工作保持高）
+
+IO_PORT "ads_sclk"     IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8;
+IO_PORT "ads_mosi"     IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8;
+IO_PORT "ads_miso"     IO_TYPE=LVCMOS33 PULL_MODE=UP;   // 输入空闲高
+IO_PORT "ads_cs_n"     IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8;
+IO_PORT "ads_drdy"     IO_TYPE=LVCMOS33 PULL_MODE=UP;   // 输入空闲高
+IO_PORT "ads_reset_n"  IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8;
+
+
+//----------------- 状态指示 LED（4 颗，低电平点亮）--------------------
+//   Dock 原理图 p15 PERIPHERALS：LED0~LED5 都是橙色灯，阳极经 3.3K 接 +3V3，
+//   阴极接 FPGA → 【驱动 0 才亮】。原来按"1=亮"理解全反了，本版按低有效重写。
+//   注意：官方 cst 与本工程此前的注释把 LED 编号错开了一位（原理图注明
+//   "LED.0 接 J14(BANK2)"），所以这里只使用 N23/N21/M25/L20 这 4 个已确认的
+//   LED 脚，不再驱动 J14 / R26 / N26 / M26 等未核实或复用脚。
+IO_LOC "led_raw"  N23;   // 亮=ADS1256 有任意通道读到正电压（>60码）
+IO_LOC "led_pll"  N21;   // 亮=PLL 已锁定（音频域活着）
+IO_LOC "led_key"  M25;   // 亮=有 FSR 键按下（>180码）
+IO_LOC "led_adc"  L20;   // 慢闪(~3Hz)=ADS1256 驱动在出 adc_valid
+
+IO_PORT "led_raw"  IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8;
+IO_PORT "led_pll"  IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8;
+IO_PORT "led_key"  IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8;
+IO_PORT "led_adc"  IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8;
+
+//----------------- ST7735 SPI 小屏（PMOD0，只用 4 根）-----------------
+//   PMOD0[0..7] = T24 / R17 / L24 / R16 / N17 / N26 / M26 / N18
+//   ★R16 / N17 是 CPU/SSPI【专用脚】，PR2017 不允许当普通 IO；
+//     N26 / M26 与 MODE0/MODE2 配置脚同组，也不用。
+//   本版只用 T24 / R17 / L24 / N18 这 4 根（都能过布局）。
+//   屏的 RES/RST、BL/LED 直接接 3.3V：背光常亮，上电由屏内 POR 复位。
+//   接线：SCL/SCLK→T24，SDA/MOSI→R17，CS→L24，DC/RS→N18，
+//         VCC→3.3V，GND→GND，BL→3.3V，RES→3.3V
+IO_LOC "lcd_sclk"  T24;   // SPI 时钟 12.5MHz
+IO_LOC "lcd_mosi"  R17;   // SPI 数据
+IO_LOC "lcd_cs_n"  L24;   // 片选（低有效）
+IO_LOC "lcd_dc"    N18;   // 命令/数据选择
+
+IO_PORT "lcd_sclk"  IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8;
+IO_PORT "lcd_mosi"  IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8;
+IO_PORT "lcd_cs_n"  IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8;
+IO_PORT "lcd_dc"    IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8;
+
+//----------------- 拓展4：WS2812 灯带（脱机 LED 演奏指引）-----------------
+//   PMOD2 的第 7 脚（A18/A17/A19/B19/A20/B20 和 B21 已用于 ADS1256 与触摸，
+//   C21 是这一排剩下的唯一空闲脚）。单线驱动 8 颗 WS2812。
+// WS2812B: 5V supply, common GND; use a 5V-powered 74AHCT125/HCT level shifter for DIN margin.
+IO_LOC "ws2812" C21;
+IO_PORT "ws2812" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8;
+
+//----------------- 调试 ------------------------------------------
+// active_debug[31:0] / pcm_mix_debug[15:0]：ILA 观察，不绑引脚。
+// 若上板想看引擎槽位：active_debug[5:0] 可临时绑 LED[5:0]
+//   = N23 / N21 / M25 / L20 / J14 / R26（注意 LED0=R26 原理图标注未接，
+//   实际 LED1~5 可用；LED1~4 已用于上方模式/状态指示，LED5=J14 仍空）。
+
+//====================================================================
+// 附：SDC 时序约束（另建 .sdc 文件）
+//   create_clock -name clk_50m -period 20.0 [get_ports {clk_50m}]
+//   PLL 输出 12.288M 由 PLL IP 自动约束；BCLK/WS 为域内分频，
+//   无需单独 create_clock。
+//====================================================================

@@ -1,0 +1,32 @@
+# Gowin 工程中间产物（综合/布局布线）
+impl/
+cache/
+output/
+synthesis/
+*.log
+*.bak
+*.tmp
+
+# 比特流/中间文件（可由源码重新生成，体积大）
+*.fs
+*.fst
+*.fz
+*.prf
+
+# 许可证文件（含 MAC 地址，严禁上传）
+*.lic
+license.dat
+license.txt
+
+# 打包产物
+*.zip
+*.rar
+*.7z
+*.tar.gz
+
+# 系统/编辑器
+Thumbs.db
+.DS_Store
+*.swp
+.idea/
+.vscode/
